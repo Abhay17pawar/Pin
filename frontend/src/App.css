@@ -1,0 +1,59 @@
+/* Popup Card Style */
+.popup-card {
+  width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.popup-card h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.popup-card p {
+  margin: 5px 0;
+}
+
+/* Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+}
+
+/* Input Fields */
+.form-container input,
+.form-container textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+/* Button Styling */
+.form-container button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}

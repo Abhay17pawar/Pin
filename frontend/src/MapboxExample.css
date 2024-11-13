@@ -1,0 +1,19 @@
+.popup-content {
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+    color: white;  /* White text */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+  }
+  
+  .popup-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .popup-description {
+    font-size: 14px;
+    margin: 0;
+  }
+  
