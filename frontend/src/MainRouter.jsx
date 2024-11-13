@@ -13,9 +13,9 @@ function MainRouter() {
       }}
     >
       <Routes>
-        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/" element={<App />} />
+        <Route path="/Home" element={<App />} />
       </Routes>
     </Router>
   );

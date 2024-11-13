@@ -7,7 +7,6 @@ import { MapContainer, TileLayer } from 'react-leaflet';
 const LoginPage = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [formData, setFormData] = useState({
-    username: '',
     email: '',
     password: '',
     latitude: null,
@@ -55,7 +54,7 @@ const LoginPage = () => {
 
     try {
         const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/login`, payload);
-        navigate('/');
+        navigate('/Home');
     } catch (error) {
       console.error('Registration failed:', error.response || error);
       alert('Registration failed! Please try again later.');
@@ -136,7 +135,7 @@ const LoginPage = () => {
 
           <div className="mt-6 text-center">
             <span className="text-gray-700">Don't have an account? </span>
-            <a href="/signup" className="text-green-600 hover:underline">Signup</a>
+            <a href="/" className="text-green-600 hover:underline">Signup</a>
           </div>
         </div>
       </div>
