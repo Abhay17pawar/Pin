@@ -12,10 +12,13 @@ const _dirname = path.resolve();
 
 app.use(express.json());
 app.use(cookieParser()); 
-app.use(cors());
+app.use(cors({
+    origin: "https://pin-bx59.onrender.com", 
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true, 
+  }));
 app.use("/api/user",userRoute);
 app.use("/api/pins" ,pinRoute);
-
 const PORT = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
 
