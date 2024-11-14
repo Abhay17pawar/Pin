@@ -53,7 +53,7 @@ const LoginPage = () => {
     };
 
     try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/login`, payload);
+        const response = await axios.post('https://pin-vd0f.onrender.com/api/user/login', payload);
         navigate('/Home');
     } catch (error) {
       console.error('Registration failed:', error.response || error);

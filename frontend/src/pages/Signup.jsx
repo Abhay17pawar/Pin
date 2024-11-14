@@ -55,7 +55,7 @@ const SignupPage = () => {
 
     try {
       // Use the environment variable for the API URL
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/signup`, payload);
+      const response = await axios.post('https://pin-vd0f.onrender.com/api/user/signup', payload);
       navigate('/login');
     } catch (error) {
       console.error('Registration failed:', error.response || error);

@@ -17,7 +17,7 @@ function App() {
 
   const fetchPlaceDetails = async () => {
     try {
-      const response = await axios.get('https://pin-bx59.onrender.com/api/pins');
+      const response = await axios.get('https://pin-vd0f.onrender.com/api/pins');
       if (response.data) {
         setPins(response.data);
       }
@@ -57,7 +57,7 @@ function App() {
 
     try {
       // Send the new pin data to the backend
-      const response = await axios.post('https://pin-bx59.onrender.com/api/pins', newPin);
+      const response = await axios.post('https://pin-vd0f.onrender.com/api/pins', newPin);
       if (response.status === 201) {
         setPins((prevPins) => [...prevPins, response.data]);
         setFormData({ title: '', rating: '', description: '', username: '' });
